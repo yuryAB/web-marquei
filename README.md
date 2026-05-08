@@ -1,64 +1,43 @@
-# Marquei Landing
+# Marquei
 
-Landing page estática do app Marquei.
+Este repositório hospeda a landing page pública do Marquei.
 
-O projeto foi feito em HTML, CSS e JavaScript vanilla, sem build obrigatório, para publicação simples no GitHub Pages.
+O Marquei é um app para profissionais autônomos que vivem de horários marcados e querem organizar a rotina com mais clareza, mais identidade e mais presença na forma de mostrar a própria disponibilidade.
 
-## Estrutura
+Site oficial: [marqueicalendario.com.br](https://marqueicalendario.com.br)
 
-- `index.html`: landing principal
-- `suporte/index.html`: página pública de suporte
-- `legal/privacy-policy/index.html`: política de privacidade
-- `legal/terms-of-use/index.html`: termos de uso
-- `privacy.html` e `terms.html`: redirects de compatibilidade para as rotas legais atuais
-- `assets/css/base.css`: tokens, reset, tipografia e estrutura global
-- `assets/css/components.css`: marca, links, botões, CTA e animações reutilizáveis
-- `assets/css/pages/*.css`: estilos específicos por página
-- `assets/js/core.js`: utilidades globais, ano atual, URL limpa e reveal animation
-- `assets/js/components/download-button.js`: componente declarativo de download
-- `assets/js/pages/*.js`: comportamento específico de cada página
-- `assets/js/config/env.js`: configuração pública dos links de distribuição
-- `assets/images/`: imagens carregadas pelo navegador
-- `src/legal/*.json`: conteúdo canônico das páginas legais
-- `src/VISAO_GERAL_MARQUEI.md`: referência de posicionamento e copy
-- `scripts/validate-static-site.mjs`: validação local de JSON, assets e links internos
+## Proposta
 
-## Configuração dos links
+O Marquei combina três frentes principais:
 
-Os links de distribuição ficam em `assets/js/config/env.js`.
+- organização dos horários do dia a dia;
+- personalização visual do calendário;
+- compartilhamento da disponibilidade com aparência mais profissional.
 
-- `TESTFLIGHT_URL`: link atual do beta
-- `APP_STORE_URL`: link da App Store quando estiver disponível
+A landing deve apresentar o produto de forma clara, moderna e visual, reforçando que o calendário também funciona como parte da apresentação do profissional.
 
-Como este projeto é estático, esse arquivo é público e não deve receber secrets.
+## Público
 
-## Preview local
+A comunicação é voltada especialmente para profissionais que atendem por horário, como cabeleireiros, barbeiros, manicures, nail designers, esteticistas, tatuadores e outros autônomos com rotina de atendimentos.
 
-```bash
-python3 -m http.server 4173
-```
+## Mensagens principais
 
-Depois abra [http://localhost:4173](http://localhost:4173).
+- calendário com identidade;
+- disponibilidade pronta para compartilhar;
+- rotina menos improvisada;
+- organização com clareza;
+- apresentação mais profissional.
 
-## Validação
+## Distribuição
 
-```bash
-node scripts/validate-static-site.mjs
-```
+O app ainda não possui link público da App Store.
 
-O script valida os JSONs legais, checa assets referenciados pelos HTMLs e confirma links internos principais.
+Enquanto isso, a landing pode direcionar usuários para o TestFlight quando houver beta disponível:
 
-## Deploy no GitHub Pages
+[Entrar no TestFlight](https://testflight.apple.com/join/bp96eu5q)
 
-1. Deixe o repositório público.
-2. Abra `Settings > Pages`.
-3. Em `Build and deployment`, escolha `Deploy from a branch`.
-4. Selecione `main` e `/ (root)`.
-5. Salve e aguarde a publicação.
-6. Ative `Enforce HTTPS` quando o site estiver disponível.
+Quando o link da App Store estiver disponível, ele deve substituir o fluxo principal de download.
 
-## Atualização de conteúdo
+## Conteúdo legal
 
-- Para alterar copy e posicionamento da landing, use `src/VISAO_GERAL_MARQUEI.md` como referência.
-- Para alterar termos e privacidade, edite os JSONs em `src/legal/`.
-- Para trocar imagens públicas, use `assets/images/` e mantenha caminhos relativos.
+Os documentos públicos de política de privacidade e termos de uso devem permanecer alinhados com o funcionamento real do app, especialmente sobre uso local, conta opcional, backup, assinatura e recursos de compartilhamento.
