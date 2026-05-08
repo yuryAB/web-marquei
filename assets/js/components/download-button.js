@@ -1,3 +1,4 @@
+(() => {
 const DOWNLOAD_LINKS = window.MARQUEI_ENV ?? {};
 
 const APPLE_ICON = `
@@ -112,3 +113,4 @@ function renderDownloadButtons() {
 }
 
 renderDownloadButtons();
+})();
