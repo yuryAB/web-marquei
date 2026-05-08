@@ -1,0 +1,229 @@
+{
+  "hero": {
+    "title": "Termos de Uso — Marquei",
+    "subtitle": "Condições para uso do app, da conta opcional e dos recursos de assinatura",
+    "lastUpdatedLabel": "Última atualização:",
+    "lastUpdated": "08/04/2026",
+    "summary": "Estes Termos explicam como você pode usar o Marquei, como funcionam conta opcional, backup, assinatura, compartilhamento e outras regras do produto."
+  },
+  "sections": [
+    {
+      "title": "1) Sobre estes Termos",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "O Marquei (App) é disponibilizado por Yury Jorge Luiz Phelippe Antony Barros (Fornecedor)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Contato e suporte: marquei.gravuras@gmail.com"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ao instalar, acessar ou usar o App, você concorda com estes Termos. Se não concordar, não use o App."
+        },
+        {
+          "type": "paragraph",
+          "text": "O Fornecedor pode futuramente operar o App por meio de pessoa jurídica ou estrutura sucessora, preservando a continuidade destes Termos e do serviço."
+        }
+      ]
+    },
+    {
+      "title": "2) O que o Marquei oferece",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "O Marquei é uma ferramenta de organização e personalização de calendário. Dependendo da versão e do plano disponível, o App pode permitir:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "criar e editar calendários, dias marcados, horários e anotações;",
+            "cadastrar clientes e importar contatos para transformá-los em clientes;",
+            "personalizar cores, estilos, presets, foto de perfil e imagens de fundo;",
+            "gerar imagens para compartilhamento/exportação;",
+            "mostrar informações em widget;",
+            "ativar notificações locais e lembretes;",
+            "vincular conta opcional para backup e recuperação entre aparelhos;",
+            "assinar recursos pagos disponibilizados na App Store."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3) Elegibilidade, uso local e conta opcional",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "O uso local do App não depende de conta. A conta é opcional e existe principalmente para backup, recuperação e continuidade dos dados entre aparelhos."
+        },
+        {
+          "type": "paragraph",
+          "text": "Quando você optar por vincular uma conta, o acesso pode ocorrer por provedores de terceiros compatíveis com o app, como Apple e Google."
+        },
+        {
+          "type": "paragraph",
+          "text": "Você é responsável por usar uma conta à qual tenha direito de acesso e por manter a segurança do seu próprio aparelho e do provedor escolhido."
+        }
+      ]
+    },
+    {
+      "title": "4) Assinatura, teste grátis e cobrança",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Alguns recursos do Marquei podem depender de assinatura ativa."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Planos, preços e eventual período de teste grátis são os mostrados na App Store e/ou dentro do app no momento da contratação.",
+            "A renovação é automática, salvo cancelamento antes do fim do período vigente.",
+            "Cobrança, gestão da assinatura, cancelamento, restauração de compras e pedidos de reembolso são processados pela Apple.",
+            "Promoções, elegibilidade, condições especiais e disponibilidade de produtos podem variar por momento, conta, região e regras da App Store."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "O Marquei não controla diretamente a política de reembolso da Apple e não tem acesso aos dados completos de pagamento do usuário."
+        }
+      ]
+    },
+    {
+      "title": "5) Seu conteúdo, clientes, contatos e compartilhamento",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Você é responsável pelo conteúdo que cria, registra, importa, mantém ou compartilha no Marquei, incluindo nomes, observações, horários, dados de clientes, imagens, textos livres e qualquer informação de terceiros."
+        },
+        {
+          "type": "paragraph",
+          "text": "Se você importar contatos ou registrar dados de terceiros, declara que possui autorização e base legal para isso."
+        },
+        {
+          "type": "paragraph",
+          "text": "Quando você usar recursos de exportação, compartilhamento ou captura de imagem, o conteúdo será enviado apenas aos destinatários, apps ou serviços que você escolher no fluxo do iOS."
+        }
+      ]
+    },
+    {
+      "title": "6) Notificações, widget e integrações do sistema",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "O App pode usar recursos do iOS, como notificações, galeria de fotos, contatos, widget e compartilhamento, sempre de acordo com a funcionalidade que você decidir usar."
+        },
+        {
+          "type": "paragraph",
+          "text": "O funcionamento desses recursos também depende de permissões do iOS, configurações do aparelho, energia, conectividade, políticas da Apple e comportamento do sistema operacional."
+        },
+        {
+          "type": "paragraph",
+          "text": "Por isso, o Marquei não garante entrega perfeita de notificações, disponibilidade contínua de widgets ou comportamento idêntico em todos os aparelhos e versões do sistema."
+        }
+      ]
+    },
+    {
+      "title": "7) Dados, privacidade e recursos em nuvem",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "O tratamento de dados pessoais do Marquei está descrito na Política de Privacidade, que faz parte destes Termos."
+        },
+        {
+          "type": "paragraph",
+          "text": "Em regra, o App pode funcionar de modo local. Quando você ativa conta e backup, o Marquei pode usar serviços como Firebase Auth, Firestore e Storage para autenticação, recuperação e manutenção de uma cópia remota da sua conta."
+        },
+        {
+          "type": "paragraph",
+          "text": "Algumas ações dependem de internet ou de serviços de terceiros, como vincular conta, recuperar backup, restaurar compras, usar recursos de nuvem e validar estados de assinatura."
+        }
+      ]
+    },
+    {
+      "title": "8) Uso permitido e restrições",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Você não pode usar o Marquei para atividades ilegais, fraudulentas, abusivas, difamatórias, invasivas, assédio, spam ou qualquer uso que viole direitos de terceiros."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Não tente burlar segurança, contornar limitações técnicas ou acessar áreas não autorizadas do app ou de serviços conectados.",
+            "Não copie, revenda, redistribua, alugue, sublicencie ou faça engenharia reversa do App, salvo se a lei permitir de forma irrenunciável.",
+            "Não use o App de modo a comprometer sua estabilidade, segurança ou integridade."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "9) Atualizações, disponibilidade e mudanças futuras",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Podemos lançar atualizações, ajustes visuais, mudanças de fluxo, correções, melhorias de estabilidade e novos recursos ao longo do tempo."
+        },
+        {
+          "type": "paragraph",
+          "text": "Recursos podem ser alterados, suspensos, substituídos ou descontinuados por motivos técnicos, legais, de segurança, compatibilidade, modelo de negócio ou inviabilidade operacional."
+        },
+        {
+          "type": "paragraph",
+          "text": "Também podemos atualizar estes Termos e a Política de Privacidade para refletir mudanças relevantes no produto, na assinatura, nos provedores usados ou em exigências legais."
+        }
+      ]
+    },
+    {
+      "title": "10) Encerramento, sign-out e exclusão de conta",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Você pode parar de usar o App quando quiser. Desinstalar o app não cancela automaticamente a assinatura na App Store."
+        },
+        {
+          "type": "paragraph",
+          "text": "Desconectar a conta em um aparelho não significa, por si só, apagar o backup remoto associado a essa conta."
+        },
+        {
+          "type": "paragraph",
+          "text": "O fluxo de exclusão de conta do app remove a conta vinculada, o backup remoto associado e os dados deste aparelho, conforme o processo disponível no serviço."
+        },
+        {
+          "type": "paragraph",
+          "text": "Podemos restringir ou encerrar o uso do App em caso de violação destes Termos, exigência legal, fraude, risco de segurança ou uso indevido."
+        }
+      ]
+    },
+    {
+      "title": "11) Limitações de responsabilidade",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "O Marquei é uma ferramenta de apoio à organização. Ele não substitui obrigações legais, sistemas oficiais, prontuários, controles regulatórios ou procedimentos profissionais específicos da sua atividade."
+        },
+        {
+          "type": "paragraph",
+          "text": "Na medida permitida por lei, o App é fornecido no estado em que se encontra. Não garantimos funcionamento ininterrupto, ausência total de falhas ou adequação a um uso específico fora do propósito normal do produto."
+        },
+        {
+          "type": "paragraph",
+          "text": "Não nos responsabilizamos por perdas decorrentes, entre outros fatores, de falhas do aparelho, do sistema operacional, da conexão, da App Store, dos provedores de nuvem, de permissões negadas, de compartilhamento indevido feito pelo próprio usuário ou de uso em desacordo com estes Termos."
+        }
+      ]
+    },
+    {
+      "title": "12) Lei aplicável e contato",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Estes Termos são regidos pelas leis do Brasil. Fica eleito o foro de Manaus/AM, salvo regra legal imperativa em sentido diverso."
+        },
+        {
+          "type": "paragraph",
+          "text": "Dúvidas sobre estes Termos: marquei.gravuras@gmail.com"
+        }
+      ]
+    }
+  ]
+}

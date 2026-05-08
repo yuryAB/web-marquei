@@ -1,0 +1,279 @@
+{
+  "hero": {
+    "title": "Política de Privacidade — Marquei",
+    "subtitle": "Como o Marquei trata dados locais, conta opcional, backup e recursos do app",
+    "lastUpdatedLabel": "Última atualização:",
+    "lastUpdated": "08/04/2026",
+    "summary": "Esta Política explica como o Marquei trata dados pessoais e dados do seu uso do app, incluindo conta opcional, backup, assinatura, analytics, contatos, notificações, mídia e compartilhamento."
+  },
+  "sections": [
+    {
+      "title": "1) Quem controla os dados",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "O Marquei é disponibilizado por Yury Jorge Luiz Phelippe Antony Barros (Controlador)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Contato geral e privacidade: marquei.gravuras@gmail.com"
+        }
+      ]
+    },
+    {
+      "title": "2) Resumo rápido",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "O Marquei funciona localmente por padrão; criar ou vincular conta é opcional.",
+            "Se você decidir vincular uma conta Apple ou Google, o app usa Firebase Auth para autenticação e pode manter um backup da sua conta no Firebase/Firestore.",
+            "O conteúdo principal do app pode incluir perfil, calendários, dias marcados, horários, anotações, clientes, presets, foto de perfil e imagens de fundo do calendário.",
+            "Compras, assinatura, renovação, cancelamento e pedidos de reembolso são processados pela Apple; o app recebe apenas informações necessárias para liberar ou restaurar acesso.",
+            "O app usa Firebase Analytics para registrar eventos de uso e propriedades técnicas do app, como versão, build e ambiente.",
+            "Contatos, fotos e notificações só são acessados quando você escolhe usar uma funcionalidade que dependa desses recursos."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3) Quais dados o Marquei trata",
+      "subsections": [
+        {
+          "subtitle": "3.1 Dados que você cria ou edita no app",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "O app pode tratar dados que você preenche ou gera no próprio uso, como nome do perfil, foto de perfil, calendários, marcações de dias, horários, anotações, clientes, presets e preferências de personalização."
+            },
+            {
+              "type": "paragraph",
+              "text": "Se você usar textos livres, nomes de clientes, telefones, e-mails, observações, valores ou outras informações de terceiros, você é responsável por ter autorização e base legal para tratar esses dados."
+            }
+          ]
+        },
+        {
+          "subtitle": "3.2 Dados de conta opcional e autenticação",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Quando você decide vincular ou recuperar uma conta, o Marquei pode tratar identificadores e dados básicos de autenticação, como UID do Firebase, e-mail disponibilizado pelo provedor e o método de acesso utilizado (Apple ou Google)."
+            },
+            {
+              "type": "paragraph",
+              "text": "A vinculação serve para habilitar backup e recuperação de dados entre aparelhos. O app não exige login para uso local básico."
+            }
+          ]
+        },
+        {
+          "subtitle": "3.3 Dados enviados para backup da conta",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Quando o backup da conta está ativo, o Marquei pode enviar para Firebase/Firestore uma cópia do perfil, calendários, dias do calendário, clientes e presets deste aparelho."
+            },
+            {
+              "type": "paragraph",
+              "text": "Se um cliente tiver sido criado a partir dos Contatos do aparelho, o app pode manter o cliente em si no backup, mas remove identificadores de vínculo exclusivos do dispositivo antes de gravar a cópia remota."
+            }
+          ]
+        },
+        {
+          "subtitle": "3.4 Dados de mídia",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Se você usar foto de perfil ou imagem de fundo do calendário em um aparelho com conta vinculada, o app pode enviar esses arquivos ao Firebase Storage para compor ou restaurar o backup da conta."
+            }
+          ]
+        },
+        {
+          "subtitle": "3.5 Dados importados dos Contatos",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Se você optar por importar contatos, o app pode ler nome, telefones e e-mails dos contatos compartilhados pelo iOS para transformá-los em clientes dentro do Marquei."
+            },
+            {
+              "type": "paragraph",
+              "text": "O acesso aos Contatos só ocorre quando você inicia essa ação e concede a permissão correspondente."
+            }
+          ]
+        },
+        {
+          "subtitle": "3.6 Dados de assinatura",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "A Apple processa pagamentos, renovação, cancelamento, restauração e eventuais reembolsos. O Marquei trata apenas o estado necessário para liberar ou restaurar o acesso à assinatura no app."
+            }
+          ]
+        },
+        {
+          "subtitle": "3.7 Dados técnicos e de uso",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "O app usa Firebase Analytics para registrar eventos de uso e propriedades técnicas do app, como versão, build e ambiente de execução."
+            },
+            {
+              "type": "paragraph",
+              "text": "Esses eventos podem incluir, por exemplo, onboarding iniciado/concluído, ações de agenda, personalização, compartilhamento de calendário, importação de contatos, início/conclusão de vínculo de conta, visualização do paywall, compra e restauração de assinatura."
+            }
+          ]
+        },
+        {
+          "subtitle": "3.8 Dados de suporte",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Se você entrar em contato conosco, poderemos tratar seu e-mail, a mensagem enviada e quaisquer anexos ou informações que você decidir compartilhar para atendimento."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4) Permissões e recursos do dispositivo",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "O Marquei solicita apenas as permissões necessárias para a funcionalidade escolhida por você. Você pode permitir, negar ou revogar essas permissões a qualquer momento nos Ajustes do iOS."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Contatos: para importar contatos e transformá-los em clientes no app.",
+            "Fotos/Galeria: para escolher foto de perfil e imagens usadas na personalização do calendário.",
+            "Notificações: para agendar lembretes e avisos locais do calendário.",
+            "Widget/App Group: para exibir no widget um recorte local do mês atual do calendário escolhido.",
+            "Compartilhamento/Exportação: para gerar imagens e usar a folha de compartilhamento do iOS quando você decidir exportar conteúdo."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5) Como usamos os dados",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Usamos os dados para:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "permitir que você crie, personalize e acompanhe seus calendários e clientes;",
+            "mostrar foto de perfil, imagens de fundo e outras personalizações do app;",
+            "importar contatos quando você solicitar essa ação;",
+            "agendar notificações locais quando você ativar lembretes;",
+            "gerar imagens e recursos de compartilhamento/exportação;",
+            "habilitar backup, recuperação e restauração entre aparelhos quando a conta estiver vinculada;",
+            "validar ou restaurar o acesso à assinatura;",
+            "entender uso do produto, diagnosticar problemas e melhorar estabilidade e experiência;",
+            "responder solicitações de suporte e cumprir obrigações legais."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6) Bases legais (LGPD)",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Dependendo do caso, tratamos dados com base em: execução do contrato e fornecimento do serviço solicitado por você; consentimento, quando a funcionalidade depender de permissão ou escolha opcional; legítimo interesse para segurança, prevenção de fraude, melhoria do app e análise de uso; e cumprimento de obrigação legal ou regulatória."
+        }
+      ]
+    },
+    {
+      "title": "7) Compartilhamento e operadores",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "O Marquei não vende seus dados pessoais."
+        },
+        {
+          "type": "paragraph",
+          "text": "Podemos compartilhar ou disponibilizar dados com operadores e parceiros estritamente necessários para o funcionamento do serviço, como:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Apple, para compras, assinaturas, restauração de compras e gestão do relacionamento de cobrança na App Store;",
+            "Google/Firebase, para autenticação opcional, backup/recuperação de conta, armazenamento de mídia e analytics;",
+            "autoridades públicas ou terceiros quando houver obrigação legal, ordem válida ou necessidade de defesa de direitos."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Quando você usa recursos de compartilhamento, exportação ou captura de imagem, o conteúdo é compartilhado somente com os destinatários e apps que você escolher no fluxo do iOS."
+        }
+      ]
+    },
+    {
+      "title": "8) Armazenamento, retenção e exclusão",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Sem conta vinculada, os dados principais ficam localmente no aparelho.",
+            "Com conta vinculada e backup ativo, o Marquei pode manter uma cópia remota do perfil, calendários, clientes, presets e mídias associadas ao backup.",
+            "Se você apagar apenas os dados deste aparelho, a cópia remota da conta pode continuar disponível para recuperação futura.",
+            "Se você desconectar a conta neste aparelho, o backup remoto não é apagado automaticamente.",
+            "Se você excluir a conta vinculada pelo fluxo próprio do app, a conta de autenticação e o backup remoto associado podem ser removidos."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A retenção pode variar conforme o tipo de dado, a forma de uso do app e exigências legais. Dados de suporte podem ser guardados pelo tempo necessário para atendimento, histórico e defesa de direitos."
+        },
+        {
+          "type": "paragraph",
+          "text": "Se você desinstalar o app sem manter conta/backup ativo, pode perder dados locais que não estejam espelhados em outro lugar."
+        }
+      ]
+    },
+    {
+      "title": "9) Transferências internacionais e segurança",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Alguns provedores usados pelo app, como Apple e Google/Firebase, podem processar dados fora do Brasil, conforme sua infraestrutura global. Nesses casos, buscamos utilizar provedores reconhecidos no mercado e medidas compatíveis com o tipo de operação realizada."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nenhum sistema é absolutamente inviolável, mas adotamos medidas técnicas e organizacionais razoáveis para reduzir riscos e limitar o acesso aos dados aos contextos necessários."
+        }
+      ]
+    },
+    {
+      "title": "10) Seus direitos (LGPD)",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A LGPD garante direitos como confirmação de tratamento, acesso, correção, anonimização, eliminação, portabilidade, informação sobre compartilhamentos e revisão de decisões automatizadas, quando aplicável."
+        },
+        {
+          "type": "paragraph",
+          "text": "Boa parte do controle sobre o conteúdo do Marquei ocorre diretamente no próprio app, porque muitos dados permanecem no aparelho. Ainda assim, você pode nos contatar para exercer direitos sobre dados que estejam sob nosso controle ou sob o controle de operadores que atuem para o Marquei."
+        },
+        {
+          "type": "paragraph",
+          "text": "Para exercer seus direitos, escreva para: marquei.gravuras@gmail.com"
+        }
+      ]
+    },
+    {
+      "title": "11) Mudanças nesta Política",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Podemos atualizar esta Política para refletir mudanças no app, nos fluxos de conta, nos provedores usados, nos recursos de assinatura, em exigências legais ou em práticas operacionais relevantes."
+        },
+        {
+          "type": "paragraph",
+          "text": "A versão vigente será a indicada na data de Última atualização no topo desta página."
+        }
+      ]
+    }
+  ]
+}
