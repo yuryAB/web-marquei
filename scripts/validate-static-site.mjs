@@ -18,7 +18,9 @@ const legalJsonFiles = [
 const errors = [];
 
 function resolveFrom(file, value) {
-  return path.resolve(root, path.dirname(file), value.split("#")[0]);
+  const pathname = value.split("#")[0].split("?")[0];
+
+  return path.resolve(root, path.dirname(file), pathname);
 }
 
 function assertFile(file) {
