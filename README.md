@@ -30,13 +30,9 @@ A comunicação é voltada especialmente para profissionais que atendem por hor�
 
 ## Distribuição
 
-O app ainda não possui link público da App Store.
+O app está disponível na App Store:
 
-Enquanto isso, a landing pode direcionar usuários para o TestFlight quando houver beta disponível:
-
-[Entrar no TestFlight](https://testflight.apple.com/join/bp96eu5q)
-
-Quando o link da App Store estiver disponível, ele deve substituir o fluxo principal de download.
+[Baixar na App Store](https://apps.apple.com/br/app/marquei/id6755414706?pt=121157372&ct=site-landingpage&mt=8)
 
 ## Conteúdo legal
 
