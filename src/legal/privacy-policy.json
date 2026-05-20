@@ -307,7 +307,28 @@
       ]
     },
     {
-      "title": "10) Transferências internacionais e segurança",
+      "title": "10) Exclusão de dados",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "O usuário pode solicitar a exclusão dos dados pessoais associados ao uso do Marquei entrando em contato pelo e-mail marquei.gravuras@gmail.com."
+        },
+        {
+          "type": "paragraph",
+          "text": "Para solicitar a exclusão, envie um e-mail com o assunto “Exclusão de dados — Marquei” e informe o e-mail ou identificador usado na conta, quando aplicável."
+        },
+        {
+          "type": "paragraph",
+          "text": "Após receber a solicitação, analisaremos e excluiremos os dados pessoais associados à conta, salvo quando a retenção for necessária para cumprir obrigações legais, fiscais, antifraude, segurança, prevenção de abuso ou resolução de disputas."
+        },
+        {
+          "type": "paragraph",
+          "text": "Eventos técnicos e analíticos enviados a serviços de terceiros, como Firebase Analytics e Meta App Events, podem ser tratados de acordo com as políticas, controles e prazos desses provedores."
+        }
+      ]
+    },
+    {
+      "title": "11) Transferências internacionais e segurança",
       "content": [
         {
           "type": "paragraph",
@@ -320,7 +341,7 @@
       ]
     },
     {
-      "title": "11) Seus direitos (LGPD)",
+      "title": "12) Seus direitos (LGPD)",
       "content": [
         {
           "type": "paragraph",
@@ -337,7 +358,7 @@
       ]
     },
     {
-      "title": "12) Mudanças nesta Política",
+      "title": "13) Mudanças nesta Política",
       "content": [
         {
           "type": "paragraph",
