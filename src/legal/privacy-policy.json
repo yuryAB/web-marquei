@@ -3,8 +3,8 @@
     "title": "Política de Privacidade — Marquei",
     "subtitle": "Como o Marquei trata dados locais, conta opcional, backup e recursos do app",
     "lastUpdatedLabel": "Última atualização:",
-    "lastUpdated": "08/04/2026",
-    "summary": "Esta Política explica como o Marquei trata dados pessoais e dados do seu uso do app, incluindo conta opcional, backup, assinatura, analytics, contatos, notificações, mídia e compartilhamento."
+    "lastUpdated": "20/05/2026",
+    "summary": "Esta Política explica como o Marquei trata dados pessoais e dados do seu uso do app, incluindo conta opcional, backup, assinatura, analytics e mensuração com Firebase/Google e Meta/Facebook SDK, contatos, notificações, mídia e compartilhamento."
   },
   "sections": [
     {
@@ -30,7 +30,8 @@
             "Se você decidir vincular uma conta Apple ou Google, o app usa Firebase Auth para autenticação e pode manter um backup da sua conta no Firebase/Firestore.",
             "O conteúdo principal do app pode incluir perfil, calendários, dias marcados, horários, anotações, clientes, presets, foto de perfil e imagens de fundo do calendário.",
             "Compras, assinatura, renovação, cancelamento e pedidos de reembolso são processados pela Apple; o app recebe apenas informações necessárias para liberar ou restaurar acesso.",
-            "O app usa Firebase Analytics para registrar eventos de uso e propriedades técnicas do app, como versão, build e ambiente.",
+            "O app usa serviços de analytics e mensuração, incluindo Firebase Analytics/Google e Meta/Facebook SDK App Events, para entender o uso do app, medir campanhas, melhorar o produto e validar campanhas de App Promotion.",
+            "O Marquei não envia para a Meta/Facebook dados como nome do usuário, e-mail, telefone, contatos importados, conteúdo digitado ou dados pessoais de clientes e agendamentos.",
             "Contatos, fotos e notificações só são acessados quando você escolhe usar uma funcionalidade que dependa desses recursos."
           ]
         }
@@ -114,11 +115,11 @@
           "content": [
             {
               "type": "paragraph",
-              "text": "O app usa Firebase Analytics para registrar eventos de uso e propriedades técnicas do app, como versão, build e ambiente de execução."
+              "text": "O app usa serviços de analytics e mensuração para registrar eventos de uso e propriedades técnicas do app, como versão, build, ambiente de execução e origem geral de eventos."
             },
             {
               "type": "paragraph",
-              "text": "Esses eventos podem incluir, por exemplo, onboarding iniciado/concluído, ações de agenda, personalização, compartilhamento de calendário, importação de contatos, início/conclusão de vínculo de conta, visualização do paywall, compra e restauração de assinatura."
+              "text": "Esses eventos podem incluir, por exemplo, abertura do app, onboarding iniciado/concluído, criação de calendário, início/conclusão de fluxo de compartilhamento, visualização do paywall, intenção de compra/assinatura e eventos de compra/assinatura processados pelo sistema da Apple/StoreKit e SDKs integrados, quando aplicável."
             }
           ]
         },
@@ -134,7 +135,79 @@
       ]
     },
     {
-      "title": "4) Permissões e recursos do dispositivo",
+      "title": "4) Analytics, mensuração e campanhas",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "O Marquei utiliza serviços de analytics e mensuração, incluindo Firebase Analytics/Google e Meta/Facebook SDK App Events, para entender como o app é usado, medir campanhas, melhorar o produto e validar campanhas de App Promotion."
+        },
+        {
+          "type": "paragraph",
+          "text": "Podem ser enviados aos SDKs integrados eventos técnicos e de uso do app, como:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "abertura do app;",
+            "início e conclusão do onboarding;",
+            "criação de calendário;",
+            "início e conclusão de fluxo de compartilhamento;",
+            "visualização de paywall;",
+            "intenção de compra ou assinatura;",
+            "eventos de compra ou assinatura processados pelo sistema da Apple/StoreKit e SDKs integrados, quando aplicável."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Esses eventos podem incluir parâmetros técnicos não sensíveis, como:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "ambiente do app;",
+            "tela ou origem do evento;",
+            "plano selecionado;",
+            "status geral de trial ou assinatura;",
+            "informações técnicas do dispositivo e do app necessárias para analytics, mensuração e atribuição."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "O Marquei não envia para a Meta/Facebook, por meio desses eventos, dados como:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "nome do usuário;",
+            "e-mail;",
+            "telefone;",
+            "nome de clientes;",
+            "contatos importados;",
+            "observações da agenda;",
+            "conteúdo digitado pelo usuário;",
+            "dados pessoais de clientes ou agendamentos."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Nesta versão, a coleta de IDFA/Advertiser ID está desativada no SDK da Meta. Mesmo assim, conforme os SDKs integrados e as configurações técnicas aplicáveis, o app ainda pode compartilhar eventos e identificadores técnicos com parceiros de analytics e mensuração."
+        },
+        {
+          "type": "paragraph",
+          "text": "Você pode consultar as políticas e informações de privacidade dos parceiros em:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Meta Privacy Policy: https://www.facebook.com/privacy/policy/",
+            "Google Privacy Policy: https://policies.google.com/privacy",
+            "Firebase privacy/data disclosure docs: https://firebase.google.com/support/privacy"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5) Permissões e recursos do dispositivo",
       "content": [
         {
           "type": "paragraph",
@@ -153,7 +226,7 @@
       ]
     },
     {
-      "title": "5) Como usamos os dados",
+      "title": "6) Como usamos os dados",
       "content": [
         {
           "type": "paragraph",
@@ -169,14 +242,14 @@
             "gerar imagens e recursos de compartilhamento/exportação;",
             "habilitar backup, recuperação e restauração entre aparelhos quando a conta estiver vinculada;",
             "validar ou restaurar o acesso à assinatura;",
-            "entender uso do produto, diagnosticar problemas e melhorar estabilidade e experiência;",
+            "entender uso do produto, medir campanhas, validar campanhas de App Promotion, diagnosticar problemas e melhorar estabilidade e experiência;",
             "responder solicitações de suporte e cumprir obrigações legais."
           ]
         }
       ]
     },
     {
-      "title": "6) Bases legais (LGPD)",
+      "title": "7) Bases legais (LGPD)",
       "content": [
         {
           "type": "paragraph",
@@ -185,7 +258,7 @@
       ]
     },
     {
-      "title": "7) Compartilhamento e operadores",
+      "title": "8) Compartilhamento e operadores",
       "content": [
         {
           "type": "paragraph",
@@ -199,7 +272,8 @@
           "type": "list",
           "items": [
             "Apple, para compras, assinaturas, restauração de compras e gestão do relacionamento de cobrança na App Store;",
-            "Google/Firebase, para autenticação opcional, backup/recuperação de conta, armazenamento de mídia e analytics;",
+            "Google/Firebase, para autenticação opcional, backup/recuperação de conta, armazenamento de mídia, analytics e mensuração;",
+            "Meta/Facebook, para analytics, mensuração, atribuição e validação de campanhas de App Promotion;",
             "autoridades públicas ou terceiros quando houver obrigação legal, ordem válida ou necessidade de defesa de direitos."
           ]
         },
@@ -210,7 +284,7 @@
       ]
     },
     {
-      "title": "8) Armazenamento, retenção e exclusão",
+      "title": "9) Armazenamento, retenção e exclusão",
       "content": [
         {
           "type": "list",
@@ -233,11 +307,11 @@
       ]
     },
     {
-      "title": "9) Transferências internacionais e segurança",
+      "title": "10) Transferências internacionais e segurança",
       "content": [
         {
           "type": "paragraph",
-          "text": "Alguns provedores usados pelo app, como Apple e Google/Firebase, podem processar dados fora do Brasil, conforme sua infraestrutura global. Nesses casos, buscamos utilizar provedores reconhecidos no mercado e medidas compatíveis com o tipo de operação realizada."
+          "text": "Alguns provedores usados pelo app, como Apple, Google/Firebase e Meta/Facebook, podem processar dados fora do Brasil, conforme sua infraestrutura global. Nesses casos, buscamos utilizar provedores reconhecidos no mercado e medidas compatíveis com o tipo de operação realizada."
         },
         {
           "type": "paragraph",
@@ -246,7 +320,7 @@
       ]
     },
     {
-      "title": "10) Seus direitos (LGPD)",
+      "title": "11) Seus direitos (LGPD)",
       "content": [
         {
           "type": "paragraph",
@@ -263,7 +337,7 @@
       ]
     },
     {
-      "title": "11) Mudanças nesta Política",
+      "title": "12) Mudanças nesta Política",
       "content": [
         {
           "type": "paragraph",
