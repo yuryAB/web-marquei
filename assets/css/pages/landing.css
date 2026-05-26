@@ -158,41 +158,71 @@
 
 .showcase-marquee {
   --showcase-gap: 18px;
+  --showcase-duration: 48s;
+  position: relative;
   margin-top: 56px;
   overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    transparent 0,
-    black 8%,
-    black 92%,
-    transparent 100%
-  );
+}
+
+.showcase-marquee::before,
+.showcase-marquee::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  width: clamp(28px, 8vw, 92px);
+  pointer-events: none;
+}
+
+.showcase-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-secondary), transparent);
+}
+
+.showcase-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-secondary), transparent);
 }
 
 .showcase-track {
   display: flex;
   gap: var(--showcase-gap);
   width: max-content;
-  animation: showcase-scroll 40s linear infinite;
+  animation: showcase-scroll var(--showcase-duration) linear infinite;
+  animation-play-state: paused;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.showcase-marquee.is-ready .showcase-track {
+  animation-play-state: running;
 }
 
 .showcase-strip {
+  flex: 0 0 auto;
   display: flex;
   gap: var(--showcase-gap);
 }
 
 .showcase-card {
   flex: 0 0 clamp(138px, 14vw, 180px);
+  min-width: 0;
   margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: rgba(250, 243, 235, 0.06);
   box-shadow: 0 24px 40px rgba(0, 0, 0, 0.28);
 }
 
 .showcase-image {
   width: 100%;
-  aspect-ratio: 531 / 885;
+  height: auto;
+  aspect-ratio: 640 / 940;
+  background: rgba(250, 243, 235, 0.06);
   object-fit: cover;
   display: block;
-  border-radius: 8px;
 }
 
 .section-footnote {
@@ -213,11 +243,11 @@
 
 @keyframes showcase-scroll {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    transform: translateX(calc(-50% - (var(--showcase-gap) / 2)));
+    transform: translate3d(calc(-50% - (var(--showcase-gap) / 2)), 0, 0);
   }
 }
 
@@ -701,7 +731,11 @@
 @media (prefers-reduced-motion: reduce) {
   .showcase-marquee {
     overflow-x: auto;
-    mask-image: none;
+  }
+
+  .showcase-marquee::before,
+  .showcase-marquee::after {
+    display: none;
   }
 
   .showcase-track {

@@ -1,57 +1,32 @@
 (() => {
-  const PRESET_IMAGES = [
-    {
-      file: "m-preset-01.png",
-      alt: "Calendário do Marquei em tons rosados",
-    },
-    {
-      file: "m-preset-02.png",
-      alt: "Calendário do Marquei com composição suave",
-    },
-    {
-      file: "m-preset-03.png",
-      alt: "Calendário do Marquei com visual claro e neutro",
-    },
-    {
-      file: "m-preset-04.png",
-      alt: "Calendário do Marquei com paleta delicada",
-    },
-    {
-      file: "m-preset-05.png",
-      alt: "Calendário do Marquei com visual leve",
-    },
-    {
-      file: "m-preset-06.png",
-      alt: "Calendário do Marquei com contraste quente e marcante",
-    },
-    {
-      file: "m-preset-07.png",
-      alt: "Calendário do Marquei com visual moderno",
-    },
-    {
-      file: "m-preset-08.png",
-      alt: "Calendário do Marquei com leitura vibrante",
-    },
-    {
-      file: "m-preset-09.png",
-      alt: "Calendário do Marquei com visual delicado",
-    },
-    {
-      file: "m-preset-10.png",
-      alt: "Calendário do Marquei com composição escura",
-    },
-  ];
+  const PRESET_IMAGES = Array.from({ length: 12 }, (_, index) => {
+    const presetNumber = String(index + 1).padStart(2, "0");
 
-  function createPresetCard({ file, alt }, basePath, isDuplicate) {
+    return {
+      file: `m-preset-${presetNumber}.png`,
+      alt: `Modelo ${index + 1} de calendário personalizado do Marquei`,
+    };
+  });
+
+  const EAGER_PRESET_COUNT = 6;
+
+  function createPresetCard({ file, alt }, basePath, isDuplicate, index) {
     const figure = document.createElement("figure");
     const image = document.createElement("img");
+    const shouldLoadEarly = !isDuplicate && index < EAGER_PRESET_COUNT;
 
     figure.className = "showcase-card";
     image.className = "showcase-image";
     image.src = `${basePath}${file}`;
     image.alt = isDuplicate ? "" : alt;
-    image.loading = "lazy";
+    image.width = 640;
+    image.height = 940;
+    image.loading = shouldLoadEarly ? "eager" : "lazy";
     image.decoding = "async";
+
+    if (shouldLoadEarly) {
+      image.setAttribute("fetchpriority", "low");
+    }
 
     figure.append(image);
     return figure;
@@ -65,11 +40,52 @@
       strip.setAttribute("aria-hidden", "true");
     }
 
-    PRESET_IMAGES.forEach((preset) => {
-      strip.append(createPresetCard(preset, basePath, isDuplicate));
+    PRESET_IMAGES.forEach((preset, index) => {
+      strip.append(createPresetCard(preset, basePath, isDuplicate, index));
     });
 
     return strip;
+  }
+
+  function startGalleryWhenReady(root, track) {
+    const earlyImages = [
+      ...track.querySelectorAll(".showcase-strip:not([aria-hidden]) img"),
+    ].slice(0, EAGER_PRESET_COUNT);
+    let isReady = false;
+
+    function markAsReady() {
+      if (isReady) {
+        return;
+      }
+
+      isReady = true;
+      root.classList.remove("is-loading");
+      root.classList.add("is-ready");
+    }
+
+    const pendingImages = earlyImages.filter((image) => !image.complete);
+
+    if (!pendingImages.length) {
+      markAsReady();
+      return;
+    }
+
+    let pendingCount = pendingImages.length;
+    const fallbackTimer = window.setTimeout(markAsReady, 1600);
+
+    function handleImageComplete() {
+      pendingCount -= 1;
+
+      if (pendingCount <= 0) {
+        window.clearTimeout(fallbackTimer);
+        markAsReady();
+      }
+    }
+
+    pendingImages.forEach((image) => {
+      image.addEventListener("load", handleImageComplete, { once: true });
+      image.addEventListener("error", handleImageComplete, { once: true });
+    });
   }
 
   function renderPresetGallery(root) {
@@ -85,8 +101,10 @@
     track.append(createPresetStrip(basePath));
     track.append(createPresetStrip(basePath, true));
 
+    root.classList.add("is-loading");
     root.replaceChildren(track);
     root.dataset.galleryReady = "true";
+    startGalleryWhenReady(root, track);
   }
 
   document.querySelectorAll("[data-preset-gallery]").forEach(renderPresetGallery);
