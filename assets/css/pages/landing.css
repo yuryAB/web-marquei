@@ -159,6 +159,7 @@
 .showcase-marquee {
   --showcase-gap: 18px;
   --showcase-duration: 48s;
+  --showcase-translate: -50%;
   position: relative;
   margin-top: 56px;
   overflow: hidden;
@@ -196,7 +197,7 @@
   will-change: transform;
 }
 
-.showcase-marquee.is-ready .showcase-track {
+.showcase-marquee.is-ready.is-in-view .showcase-track {
   animation-play-state: running;
 }
 
@@ -225,6 +226,16 @@
   display: block;
 }
 
+@keyframes showcase-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(var(--showcase-translate), 0, 0);
+  }
+}
+
 .section-footnote {
   margin: 0;
   color: var(--text-body);
@@ -239,16 +250,6 @@
 #como-funciona .section-body {
   max-width: none;
   margin-top: 20px;
-}
-
-@keyframes showcase-scroll {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(calc(-50% - (var(--showcase-gap) / 2)), 0, 0);
-  }
 }
 
 .howworks-board {
